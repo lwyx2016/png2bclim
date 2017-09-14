@@ -126,5 +126,11 @@ namespace png2bclim
             string msg = String.Join(Environment.NewLine + Environment.NewLine, lines);
             MessageBox.Show(msg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PB_BCLIM.Image.RotateFlip(RotateFlipType.Rotate270FlipNone);
+            PB_BCLIM.Refresh();
+        }
     }
 }
