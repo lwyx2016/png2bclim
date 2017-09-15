@@ -32,8 +32,9 @@ namespace png2bclim
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter =
-                "CTR Layout Images (*.bclim)|*.bclim" +
-                "|All Files (*.*)|*.*";
+               "CTR Layout Images (*.bclim)|*.bclim" +
+               "|Portable Network Graphics (*.png)|*.png" +
+               "|All Files (*.*)|*.*";
             if (ofd.ShowDialog() != DialogResult.OK) return;
 
             openFile(TB_Path.Text = ofd.FileName);
