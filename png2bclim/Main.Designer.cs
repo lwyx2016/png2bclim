@@ -44,6 +44,8 @@
             this.L_Meta = new System.Windows.Forms.Label();
             this.L_Details = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_BCLIM)).BeginInit();
             this.GB_BCLIMOptions.SuspendLayout();
             this.GB_PNGOptions.SuspendLayout();
@@ -53,7 +55,7 @@
             // 
             // B_Open
             // 
-            this.B_Open.Location = new System.Drawing.Point(12, 8);
+            this.B_Open.Location = new System.Drawing.Point(5, 52);
             this.B_Open.Name = "B_Open";
             this.B_Open.Size = new System.Drawing.Size(75, 21);
             this.B_Open.TabIndex = 2;
@@ -65,10 +67,10 @@
             // 
             this.TB_Path.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TB_Path.Location = new System.Drawing.Point(93, 10);
+            this.TB_Path.Location = new System.Drawing.Point(81, 4);
             this.TB_Path.Name = "TB_Path";
             this.TB_Path.ReadOnly = true;
-            this.TB_Path.Size = new System.Drawing.Size(635, 21);
+            this.TB_Path.Size = new System.Drawing.Size(656, 21);
             this.TB_Path.TabIndex = 5;
             // 
             // PB_BCLIM
@@ -91,7 +93,7 @@
             this.GB_BCLIMOptions.Controls.Add(this.L_SQREC);
             this.GB_BCLIMOptions.Controls.Add(this.CB_Shape);
             this.GB_BCLIMOptions.Controls.Add(this.CB_OutFormat);
-            this.GB_BCLIMOptions.Location = new System.Drawing.Point(12, 39);
+            this.GB_BCLIMOptions.Location = new System.Drawing.Point(12, 93);
             this.GB_BCLIMOptions.Name = "GB_BCLIMOptions";
             this.GB_BCLIMOptions.Size = new System.Drawing.Size(149, 105);
             this.GB_BCLIMOptions.TabIndex = 10;
@@ -158,7 +160,7 @@
             // 
             this.GB_PNGOptions.Controls.Add(this.CHK_NoCrop);
             this.GB_PNGOptions.Controls.Add(this.CHK_AutoSavePNG);
-            this.GB_PNGOptions.Location = new System.Drawing.Point(12, 150);
+            this.GB_PNGOptions.Location = new System.Drawing.Point(12, 213);
             this.GB_PNGOptions.Name = "GB_PNGOptions";
             this.GB_PNGOptions.Size = new System.Drawing.Size(149, 60);
             this.GB_PNGOptions.TabIndex = 11;
@@ -200,7 +202,7 @@
             // 
             this.GB_Details.Controls.Add(this.L_Meta);
             this.GB_Details.Controls.Add(this.L_Details);
-            this.GB_Details.Location = new System.Drawing.Point(12, 215);
+            this.GB_Details.Location = new System.Drawing.Point(12, 289);
             this.GB_Details.Name = "GB_Details";
             this.GB_Details.Size = new System.Drawing.Size(149, 79);
             this.GB_Details.TabIndex = 29;
@@ -230,7 +232,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 314);
+            this.button1.Location = new System.Drawing.Point(12, 401);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 23);
             this.button1.TabIndex = 30;
@@ -238,12 +240,33 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(86, 52);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 21);
+            this.button2.TabIndex = 31;
+            this.button2.Text = "Save";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "File path:";
+            // 
             // Main
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 355);
+            this.ClientSize = new System.Drawing.Size(740, 452);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.GB_Details);
             this.Controls.Add(this.PaletteBox);
@@ -288,6 +311,8 @@
         private System.Windows.Forms.CheckBox CHK_AutoSaveBCLIM;
         private System.Windows.Forms.Label L_Meta;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

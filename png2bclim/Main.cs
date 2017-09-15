@@ -27,10 +27,13 @@ namespace png2bclim
                 files = Directory.GetFiles(files[0], "*.*", SearchOption.TopDirectoryOnly);
             foreach (string f in files)
                 openFile(f);
-        }        
+        }
         private void B_Open_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter =
+                "CTR Layout Images (*.bclim)|*.bclim" +
+                "|All Files (*.*)|*.*";
             if (ofd.ShowDialog() != DialogResult.OK) return;
 
             openFile(TB_Path.Text = ofd.FileName);
@@ -39,7 +42,7 @@ namespace png2bclim
         {
             // Handle file
             try
-            { 
+            {
                 if (!File.Exists(path)) throw new Exception("Can only accept files, not folders.");
                 PaletteBox.Visible = false;
                 TB_Path.Text = path;
@@ -53,7 +56,8 @@ namespace png2bclim
                         makeBMP(path);
                         break;
                 }
-            } catch (Exception e) { Error(e.ToString()); }
+            }
+            catch (Exception e) { Error(e.ToString()); }
         }
 
         // File Generation
