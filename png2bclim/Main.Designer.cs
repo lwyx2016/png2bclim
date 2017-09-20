@@ -55,11 +55,11 @@
             // 
             // B_Open
             // 
-            this.B_Open.Location = new System.Drawing.Point(5, 52);
+            this.B_Open.Location = new System.Drawing.Point(2, 50);
             this.B_Open.Name = "B_Open";
-            this.B_Open.Size = new System.Drawing.Size(75, 21);
+            this.B_Open.Size = new System.Drawing.Size(159, 21);
             this.B_Open.TabIndex = 2;
-            this.B_Open.Text = "Open";
+            this.B_Open.Text = "Open the BCLIM/PNG Flie";
             this.B_Open.UseVisualStyleBackColor = true;
             this.B_Open.Click += new System.EventHandler(this.B_Open_Click);
             // 
@@ -67,21 +67,19 @@
             // 
             this.TB_Path.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TB_Path.Location = new System.Drawing.Point(81, 4);
+            this.TB_Path.Location = new System.Drawing.Point(83, 7);
             this.TB_Path.Name = "TB_Path";
             this.TB_Path.ReadOnly = true;
-            this.TB_Path.Size = new System.Drawing.Size(656, 21);
+            this.TB_Path.Size = new System.Drawing.Size(675, 21);
             this.TB_Path.TabIndex = 5;
             // 
             // PB_BCLIM
             // 
-            this.PB_BCLIM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PB_BCLIM.ErrorImage = null;
             this.PB_BCLIM.InitialImage = null;
             this.PB_BCLIM.Location = new System.Drawing.Point(167, 50);
             this.PB_BCLIM.Name = "PB_BCLIM";
-            this.PB_BCLIM.Size = new System.Drawing.Size(25, 25);
-            this.PB_BCLIM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PB_BCLIM.Size = new System.Drawing.Size(580, 465);
             this.PB_BCLIM.TabIndex = 6;
             this.PB_BCLIM.TabStop = false;
             this.PB_BCLIM.Click += new System.EventHandler(this.clickPreview);
@@ -232,7 +230,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 401);
+            this.button1.Location = new System.Drawing.Point(12, 431);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 23);
             this.button1.TabIndex = 30;
@@ -242,18 +240,18 @@
             // 
             // button2
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(86, 52);
+            this.button2.Location = new System.Drawing.Point(12, 384);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 21);
             this.button2.TabIndex = 31;
-            this.button2.Text = "Save";
+            this.button2.Text = "Save PNG";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 13);
+            this.label1.Location = new System.Drawing.Point(12, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 32;
@@ -264,7 +262,7 @@
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 452);
+            this.ClientSize = new System.Drawing.Size(759, 527);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

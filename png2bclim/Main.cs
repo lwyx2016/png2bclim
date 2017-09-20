@@ -137,5 +137,19 @@ namespace png2bclim
             PB_BCLIM.Image.RotateFlip(RotateFlipType.Rotate270FlipNone);
             PB_BCLIM.Refresh();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog SFD = new SaveFileDialog();
+            SFD.Filter = "Portable Network Graphics (*.png)|*.png";
+            SFD.FilterIndex = 0;
+            SFD.RestoreDirectory = true;
+            SFD.Title = "Please select the saved directory";
+            SFD.FileName = null;
+            SFD.ShowDialog();
+            string strPath = SFD.FileName;
+            Image img = PB_BCLIM.Image;
+            img.Save(strPath);
+        }
     }
 }
