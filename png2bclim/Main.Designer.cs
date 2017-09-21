@@ -80,6 +80,7 @@
             this.PB_BCLIM.Location = new System.Drawing.Point(167, 50);
             this.PB_BCLIM.Name = "PB_BCLIM";
             this.PB_BCLIM.Size = new System.Drawing.Size(580, 465);
+            this.PB_BCLIM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.PB_BCLIM.TabIndex = 6;
             this.PB_BCLIM.TabStop = false;
             this.PB_BCLIM.Click += new System.EventHandler(this.clickPreview);
