@@ -32,8 +32,9 @@ namespace png2bclim
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter =
-               "CTR Layout Images (*.bclim)|*.bclim" +
-               "|Portable Network Graphics (*.png)|*.png" +
+               "BCLIM/PNG File (*.bclim;*.png)|*.bclim;*.png" +
+               "|BCLIM File (*.bclim)|*.bclim" +
+               "|PNG File (*.png)|*.png" +
                "|All Files (*.*)|*.*";
             if (ofd.ShowDialog() != DialogResult.OK) return;
 
@@ -117,14 +118,6 @@ namespace png2bclim
         }
 
         // User Experience
-        private void clickPreview(object sender, EventArgs e)
-        {
-            PB_BCLIM.BackColor = PB_BCLIM.BackColor == Color.Transparent ? Color.GreenYellow : Color.Transparent;
-        }
-        private void dclickPreview(object sender, EventArgs e)
-        {
-            PB_BCLIM.BorderStyle = PB_BCLIM.BorderStyle == BorderStyle.FixedSingle ? BorderStyle.None : BorderStyle.FixedSingle;
-        }
         private void Error(params string[] lines)
         {
             System.Media.SystemSounds.Exclamation.Play();

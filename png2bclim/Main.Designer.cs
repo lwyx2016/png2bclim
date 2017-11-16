@@ -57,9 +57,9 @@
             // 
             this.B_Open.Location = new System.Drawing.Point(2, 50);
             this.B_Open.Name = "B_Open";
-            this.B_Open.Size = new System.Drawing.Size(159, 21);
+            this.B_Open.Size = new System.Drawing.Size(62, 21);
             this.B_Open.TabIndex = 2;
-            this.B_Open.Text = "Open the BCLIM/PNG Flie";
+            this.B_Open.Text = "Open";
             this.B_Open.UseVisualStyleBackColor = true;
             this.B_Open.Click += new System.EventHandler(this.B_Open_Click);
             // 
@@ -75,6 +75,7 @@
             // 
             // PB_BCLIM
             // 
+            this.PB_BCLIM.BackgroundImage = global::png2bclim.Properties.Resources.BackgroundImage;
             this.PB_BCLIM.ErrorImage = null;
             this.PB_BCLIM.InitialImage = null;
             this.PB_BCLIM.Location = new System.Drawing.Point(167, 50);
@@ -83,8 +84,6 @@
             this.PB_BCLIM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.PB_BCLIM.TabIndex = 6;
             this.PB_BCLIM.TabStop = false;
-            this.PB_BCLIM.Click += new System.EventHandler(this.clickPreview);
-            this.PB_BCLIM.DoubleClick += new System.EventHandler(this.dclickPreview);
             // 
             // GB_BCLIMOptions
             // 
@@ -231,7 +230,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 431);
+            this.button1.Location = new System.Drawing.Point(14, 384);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 23);
             this.button1.TabIndex = 30;
@@ -241,7 +240,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 384);
+            this.button2.Location = new System.Drawing.Point(76, 50);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 21);
             this.button2.TabIndex = 31;
